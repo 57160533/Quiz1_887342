@@ -54,14 +54,13 @@ US_states =
 	
 #1.1
 US_states.each { |key,value| puts value if value[-1] == "T" || value[-1] == "N" } 
+puts "------------------------------"
 
 #1.2
 name_states = US_states.sort { |key, value| value[0] <=> key[0] }
 puts name_states
+puts "------------------------------"
 
 #1.3
 US_states.select { |key,value| puts key if (key.start_with?("A") || key.start_with?("E") || key.start_with?("I") || key.start_with?("O") || key.start_with?("U")) && (key[-1]=="a" || key[-1]=="e" ||key[-1]=="i" || key[-1]=="o" || key[-1]=="u") }
-
-
-
-
+puts "------------------------------"
